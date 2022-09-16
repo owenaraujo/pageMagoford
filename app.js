@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-  app.set("port", process.env.port || 3000)
+  app.set("port", process.env.port || 5000)
 
   app.listen(app.get("port"), ()=>{
     console.log("server in port ",+app.get("port"))
